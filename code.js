@@ -95,8 +95,8 @@ function flip(toFlip){
 	document.getElementById("dim").className = "visible";
 	let selected = organelles[order[toFlip]];
 	document.getElementById("name").innerHTML = `Name: ${selected.name}`;
-	document.getElementById("anat").innerHTML = `Name: ${selected.anat}`;
-	document.getElementById("phys").innerHTML = `Name: ${selected.phys}`;
+	document.getElementById("anat").innerHTML = `Anatomy: ${selected.anat}`;
+	document.getElementById("phys").innerHTML = `Physiology: ${selected.phys}`;
 }
 
 function hide(){
