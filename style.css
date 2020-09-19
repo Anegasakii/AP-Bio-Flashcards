@@ -1,0 +1,130 @@
+:root {
+	--main: #4995fa;
+	--darker: #224aa5;
+	--lighter: #9dc8f9;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--lighter);
+	font-family: sans-serif;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 22% 22% 22% 22%;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+}
+
+.card {
+	text-align: center;
+	box-shadow: 0px 0px 5px;
+	background-color: var(--darker);
+	color: white;
+	font-size: 150%;
+	padding: 10px;
+	margin: 20px 20px 0px 20px;
+	border-radius: 20px;
+	overflow:auto;
+}
+
+.card:hover {
+	animation-name: highlight;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+#dim {
+	position: absolute;
+	background-color:black;
+	opacity:0.5;
+	width: 100%;
+	height: 100%;
+}
+
+#focus {
+	border-radius: 20px;
+	background-color: white;
+	position: absolute;
+	top: 25%;
+	left: 33%;
+	width: 32%;
+	height: auto;
+	text-align:center;
+}
+
+button, a {
+	border: none;
+	display: inline;
+	width: auto;
+	font-size: 150%;
+	padding: 7px;
+	margin: 10px;
+	background-color: var(--main);
+	color: white;
+	border-radius: 10px;
+	text-decoration:none;
+}
+
+button:hover, a:hover {
+	animation-name: darken;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}	
+
+#name, #anat, #phys {
+	display: block;
+	border-radius: 10px;
+	background-color: var(--main);
+	color: white;
+	font-size: 200%;
+	margin: 20px;
+	padding: 5px;
+}
+
+a.inGrid {
+	background-color: var(--darker);
+	font-size: 100%;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	border-radius: 5px;
+}
+
+a.inGrid:hover {
+	animation-name: lighten;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes darken {
+	100% {
+		color: white;
+		background-color: var(--darker);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes lighten {
+	100% {
+		color: var(--darker);
+		background-color: var(--lighter);
+	}
+}
+
+@keyframes highlight {
+	100% {
+		background-color: var(--main);
+		box-shadow: 0px 0px 15px;
+	}
+}

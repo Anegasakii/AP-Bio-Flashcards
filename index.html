@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+	<div class="hidden" id="dim" onclick="hide()">
+	</div>
+	<button onclick="shuffle()">Shuffle</button>
+	<button onclick="names()">Name Up</button>
+	<button onclick="anat()">Anatomy Up</button>
+	<button onclick="phys()">Physiology Up</button>
+	<button onclick="random()">Random Up</button>
+	<br>
+	Disclaimer: This hasn't been checked by a teacher yet so the information may or may not be adequate for studying. Or looking at. You may lose some brain cells.
+	<br>
+	<div class="cards">
+		<div class="card" id="0" onclick="flip(0)">
+		If you can see this,
+		</div>
+		<div class="card" id="1" onclick="flip(1)">
+		something's horribly broken.
+		</div>
+		<div class="card" id="2" onclick="flip(2)">
+		So please <a class="inGrid" href="mailto: vienxtras@gmail.com">email me</a>
+		</div>
+		<div class="card" id="3" onclick="flip(3)">
+		an image of what you see
+		</div>
+		<div class="card" id="4" onclick="flip(4)">
+		when you press f12 and then console.
+		</div>
+		<div class="card" id="5" onclick="flip(5)">
+		You can take a picture with either
+		</div>
+		<div class="card" id="6" onclick="flip(6)">
+		Print screen (possibly looks like Prt Sc),
+		</div>
+		<div class="card" id="7" onclick="flip(7)">
+		which is probably in the top right of your keyboard,
+		</div>
+		<div class="card" id="8" onclick="flip(8)">
+		or by pressing the Windows key, next to Left Alt,
+		</div>
+		<div class="card" id="9" onclick="flip(9)">
+		and shift, and s, all together.
+		</div>
+		<div class="card" id="10" onclick="flip(10)">
+		If you're on something else, sorry,
+		</div>
+		<div class="card" id="11" onclick="flip(11)">
+		I don't know anything about it.
+		</div>
+		<div class="card" id="12" onclick="flip(12)">
+		Just look up how to take a screenshot.
+		</div>
+		<div class="card" id="13" onclick="flip(13)">
+		Or refresh.
+		</div>
+		<div class="card" id="14" onclick="flip(14)">
+		That usually fixes stuff, right?
+		</div>
+		<div class="card" id="15" onclick="flip(15)">
+		I dunno, I might've built this thing,
+		</div>
+		<div class="card" id="16" onclick="flip(16)">
+		But I have no idea what I'm doing.
+		</div>
+		<div class="card" id="17" onclick="flip(17)">
+		This screen is honestly probably more likely
+		</div>
+		<div class="card" id="18" onclick="flip(18)">
+		than seeing any working flashcards.
+		</div>
+		<div class="card" id="19" onclick="flip(19)">
+		Honestly, if it does work for you, shoot another <a class="inGrid" href="mailto: vienxtras@gmail.com">email!</a>
+		</div>
+	</div>
+	
+	<div class="hidden" id="focus" onclick="hide()">
+		<p id="name"> Name </p>
+		<p id="anat"> Anatomy </p>
+		<p id="phys"> Physiology </p>
+	</div>
+	<br>
+	<a href="https://github.com/Anegasakii/AP-Bio-Flashcards" class="link">Repo</a>
+	<a href="https://anegasakii.github.io/" class="link">Website</a>
+</body>
+<script src="code.js"></script>
+</html>
+
