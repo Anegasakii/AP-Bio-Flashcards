@@ -19,6 +19,7 @@ html, body {
 }
 
 .card {
+	cursor: pointer;
 	text-align: center;
 	box-shadow: 0px 0px 5px;
 	background-color: var(--darker);
@@ -64,6 +65,7 @@ html, body {
 }
 
 button, a {
+	cusor: pointer;
 	border: none;
 	display: inline;
 	width: auto;
@@ -119,6 +121,7 @@ a.inGrid:hover {
 	100% {
 		color: var(--darker);
 		background-color: var(--lighter);
+		box-shadow: 0px 0px 5px var(--darker);
 	}
 }
 
