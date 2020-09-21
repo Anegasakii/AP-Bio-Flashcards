@@ -17,7 +17,7 @@ html, body {
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
 }
-
+	
 .card {
 	cursor: pointer;
 	text-align: center;
@@ -46,7 +46,7 @@ html, body {
 }
 
 #dim {
-	position: absolute;
+	position: fixed;
 	background-color:black;
 	opacity:0.5;
 	width: 100%;
@@ -56,8 +56,8 @@ html, body {
 #focus {
 	border-radius: 20px;
 	background-color: white;
-	position: absolute;
-	top: 25%;
+	position: fixed;
+	top: 20%;
 	left: 33%;
 	width: 32%;
 	height: auto;
@@ -84,7 +84,7 @@ button:hover, a:hover {
 	animation-fill-mode: forwards;
 }	
 
-#name, #anat, #phys {
+#name, #anat, #phys, #focusImg {
 	display: block;
 	border-radius: 10px;
 	background-color: var(--main);
