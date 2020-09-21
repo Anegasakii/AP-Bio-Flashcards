@@ -10,8 +10,8 @@ class ornel {
 	}
 }
 
-const plasm = new ornel("Plasma Membrane", "Phospholipid Bilayer, Pro - Double, Eu - Single", "The outer border of the cell (border control)", "plasma.png");
-const nucls = new ornel("Nucleus", "Next largest after central vacuole", "Cell's control center","nucleus.png");
+const plasm = new ornel("Plasma Membrane", "Phospholipid Bilayer, Pro - Double, Eu - Single", "The outer border of the cell (border control)", "plasm.png");
+const nucls = new ornel("Nucleus", "Next largest after central vacuole", "Cell's control center","nucls.png");
 const envel = new ornel("Nuclear Envelope", "Around the nucleus, connected to R.ER", "Separates nucleus internals from externals","envel.png");
 const chrom = new ornel("Chromatin", "Like rope, in the nucleus", "Compressed DNA","chroma.png");
 const nuclo = new ornel("Nucleolus", "In the nucleus, round", "Regulates cell functions & proteins","nuclo.png");
