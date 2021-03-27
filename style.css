@@ -1,15 +1,4 @@
-:root {
-	--main: #4995fa;
-	--darker: #2238A5;
-	--lighter: #A8CFFF;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--lighter);
-	font-family: sans-serif;
-}
+@import url(https://anegasakii.github.io/base.css);
 
 .cards {
 	display: grid;
@@ -17,7 +6,12 @@ html, body {
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
 }
-	
+
+p {
+	display: inline;
+	color: var(--darker);
+}
+
 .card {
 	cursor: pointer;
 	text-align: center;
@@ -47,6 +41,8 @@ html, body {
 
 #dim {
 	position: fixed;
+	left: 0;
+	top: 0;
 	background-color:black;
 	opacity:0.5;
 	width: 100%;
