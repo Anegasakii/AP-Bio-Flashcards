@@ -101,7 +101,7 @@ function flip(toFlip){
 	document.getElementById("name").innerHTML = `Name: ${selected.name}`;
 	document.getElementById("anat").innerHTML = `Anatomy: ${selected.anat}`;
 	document.getElementById("phys").innerHTML = `Physiology: ${selected.phys}`;
-	document.getElementById("focusImg").innerHTML = `<img height="200" src=${selected.img} title='${selected.anat}'>`
+	document.getElementById("focusImg").innerHTML = `<img src=${selected.img} title='${selected.anat}'>`
 }
 
 function hide(){
